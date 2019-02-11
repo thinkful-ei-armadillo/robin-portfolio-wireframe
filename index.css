@@ -1,0 +1,104 @@
+*{ 
+  box-sizing: border-box;
+}
+
+body{
+  color: black;
+  margin-top: 30px;
+  margin-left: auto;
+  font-family: "Open Sans",
+  sans-serif; 
+}
+main {
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  display: flex;
+  align-items: center
+}
+li p, div p{
+  margin-top: 5px;
+  text-align: left;
+  padding-left: 15px;
+  overflow: hidden;
+}
+nav a {
+  margin: 5px;
+  margin-left: 10px;
+}
+img.about-me-pic{
+  float: left;
+  margin-left: auto;
+}
+img.float-right{
+  float:right;
+}
+nav *{
+  display:inline-block;
+}
+
+.navbar-anchors{ 
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+}
+.projects-container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row {
+  max-width: 1000px;
+  padding-left: auto;
+  padding-right: auto;
+  margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.333333%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
